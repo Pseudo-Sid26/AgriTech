@@ -1,0 +1,109 @@
+/* register.css - Modern & Elegant Registration Page */
+
+/* Page Background */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #f3f4f6, #e0e7ff); /* Soft grayish-blue gradient */
+    padding: 20px;
+  }
+  
+  /* Registration Card */
+  .auth-box {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+    box-sizing: border-box;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Centered Heading */
+  .auth-box h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Form Inputs */
+  .auth-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9fafb;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  .auth-box input:focus {
+    border-color: #6366f1; /* Soft blue focus */
+    outline: none;
+    background: white;
+    box-shadow: 0 0 6px rgba(99, 102, 241, 0.4);
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Register Button */
+  .auth-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #6366f1; /* Blue primary */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  
+  .auth-box button:hover {
+    background: #4f46e5;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(79, 70, 229, 0.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .auth-box {
+      padding: 2rem;
+      max-width: 90%;
+    }
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

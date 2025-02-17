@@ -1,0 +1,33 @@
+.add-worker-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+  }
+  
+  .add-worker-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-worker-container input,
+  .add-worker-container select,
+  .add-worker-container button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-worker-container button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .add-worker-container .error-message {
+    color: red;
+    margin-bottom: 10px;
+  }
+  

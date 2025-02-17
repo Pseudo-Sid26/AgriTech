@@ -1,0 +1,19 @@
+.video-call-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .video-call-container > div {
+    width: 45%;
+    padding: 10px;
+    background: #f3f3f3;
+    border-radius: 10px;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  

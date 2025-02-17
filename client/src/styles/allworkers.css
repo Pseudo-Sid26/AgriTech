@@ -1,0 +1,107 @@
+/* Main Container */
+.all-workers-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.all-workers-container h2 {
+  font-size: 2.2rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Worker List */
+.all-workers-container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Worker Card */
+.worker-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.worker-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Worker Photo */
+.worker-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 3px solid #2e7d32;
+}
+
+/* Worker Info */
+.worker-info {
+  text-align: left;
+}
+
+.worker-info p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Status Color Coding */
+.worker-info p:nth-child(4) { /* Status */
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.worker-info p:nth-child(4):contains('Available') {
+  color: white;
+  background: #4caf50;
+}
+
+.worker-info p:nth-child(4):contains('Busy') {
+  color: white;
+  background: #f57c00;
+}
+
+.worker-info p:nth-child(4):contains('Inactive') {
+  color: white;
+  background: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .worker-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .worker-photo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

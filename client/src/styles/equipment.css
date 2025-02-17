@@ -1,0 +1,36 @@
+.equipment-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    background: #fff5e6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .equipment-container h2 {
+    color: #8e44ad;
+  }
+  
+  .equipment-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .equipment-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .equipment-card h3 {
+    color: #3498db;
+  }
+  
+  .equipment-card p {
+    color: #2c3e50;
+  }
+  

@@ -1,0 +1,86 @@
+/* marketplace-container */
+.marketplace-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 78.5vh;
+    background: linear-gradient(135deg, #f2f2f2, #e0e0e0);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+    margin-top: -0%;
+  }
+  
+  /* marketplace-options */
+  .marketplace-options {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .marketplace-options h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4caf50;
+  }
+  
+  .marketplace-options p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .options button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .options button:hover {
+    background-color: #45a049;
+  }
+  
+  .options button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Optional: Styling for SellProduct and BuyProduct components */
+  .SellProduct, .BuyProduct {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .SellProduct h3, .BuyProduct h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .SellProduct p, .BuyProduct p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  

@@ -1,0 +1,232 @@
+/* Root Variables for Consistency */
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+  --button-color: #ff9800;
+  --button-hover: #e68900;
+  --header-bg: rgba(0, 0, 0, 0.6);
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --glass-bg: rgba(255, 255, 255, 0.2);
+  --glass-border: rgba(255, 255, 255, 0.4);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Home Container */
+.home-container {
+  width: 100%;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.home-header {
+  position: relative;
+  background: url("../../public/images/homeback.jpeg") no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 10px var(--shadow-dark);
+  padding: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Overlay for Readability */
+.home-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+a{
+  text-decoration: none;
+}
+
+.home-header h1,
+.home-header p {
+  position: relative;
+  z-index: 2;
+}
+
+.home-header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.home-header p {
+  font-size: 1.4rem;
+  max-width: 600px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* About Section */
+.home-about {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+  animation: slideUp 1s ease-in-out;
+}
+
+.home-about h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.home-about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Features Section */
+.home-features {
+  background: var(--secondary-color);
+  padding: 60px 20px;
+}
+
+.home-features h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.feature-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0px 4px 8px var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px var(--shadow-dark);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.feature-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Call to Action */
+.home-cta {
+  background: var(--primary-color);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.home-cta h2 {
+  font-size: 2.5rem;
+}
+
+.home-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background: var(--button-color);
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background: var(--button-hover);
+  transform: scale(1.05);
+}
+
+/* Footer */
+.home-footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-header {
+    height: 60vh;
+  }
+
+  .home-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-header p {
+    font-size: 1.2rem;
+  }
+
+  .home-about,
+  .home-features,
+  .home-cta {
+    padding: 40px 15px;
+  }
+}
